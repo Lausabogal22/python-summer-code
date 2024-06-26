@@ -1,0 +1,37 @@
+#CHECK THE EMAIL AND THE INPUT OF THE USER
+email: input("please enter a valid email:")
+
+    
+def is_valid_email(email):
+    # CLEAN DE DATA
+    email = email.strip()
+    
+    # Check if email contains a space
+    if " " in email:
+        return False
+    
+    # Check if there's exactly one "@" symbol and it's at the fifth-to-last index or earlier
+    at_index = email.find("@")
+    if at_index == -1 or at_index > len(email) - 5 or email.count("@") != 1:
+        return False
+    
+    # Check if there's at least one character before the "@"
+    if at_index == 0:
+        return False
+    
+    # Check if there's a "." at the third-to-last index
+    if email[-4] != ".":
+        return False
+    
+    return True
+testing_emails = [
+    "test1@gmail.com",       # True
+    "user@hotmail", # False
+    "laura@outlook.com",     # true
+    "test.com",   # False
+    "lalaximena_2233@gmaill.com" #true
+
+]
+
+for email in testing_emails:
+    print(f"the email that the user write is: {email}: {is_valid_email(email)}")
