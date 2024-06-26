@@ -1,0 +1,32 @@
+
+#CODE   FOR CALCULATE THE AREA OF A TRIANGLE
+#ASSIGMENTE 2
+
+
+Base= 20
+Height= 15
+Area_triangle= 1/2 * Base * Height
+
+print(f"the area of the tringle is: {Area_triangle}")
+
+
+#CODE   FOR CALCULATE THE AREA OF A TRIANGLE
+#ASSIGMENTE 2
+
+
+Base= 20
+Height= 15
+Area_triangle= 1/2 * Base * Height
+
+print(f"the area of the tringle is: {Area_triangle}")
+
+#AREA OF THE TRIANGULE WITH TWO INPUTS 
+
+Userdates1=input("Please add the base of the triangle:")
+Userdates2=input("Please add the height of the triangle:")
+
+Base1= float(Userdates1.strip())
+Height1= float(Userdates2.strip())
+
+Area_triangeluser= 1/2 * Base1 * Height1
+print(f"With the dates provided the area of the triangle is: {Area_triangeluser}")
