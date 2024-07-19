@@ -1,0 +1,75 @@
+# Messages
+
+msg="**ERROR**"
+Welcome="Welcome to Website Sign-Up!"
+T_again="Please, Try again"
+
+# Definiendo las variables de usuario y contraseña con las primeras condiciones dadas, este es la condiciones que hace que el usarios se valido
+def is_valid_username(username):
+    # The username should be at least 6 characters long
+    return len(username) >= 6
+
+#estas son las condiciones que hacen la contraseña valida, luego la evalua con la contraseña suministrada por el usuario
+def is_valid_password(password):
+    # Password should be at least 8 characters long
+    if len(password) < 8:
+        return False
+    # all the conditions for the password
+    has_upper = any(c.isupper() for c in password)
+    has_lower = any(c.islower() for c in password)
+    has_digit = any(c.isdigit() for c in password)
+    #this part its no working well the special characters 
+    has_special = any(char in '!?@#$^&*_ ' for char in password)
+    
+    return has_upper and has_lower and has_digit
+
+
+
+
+#INPUT FOR THE USER AND VALIDATION OF THE DATES 
+
+def signup():
+    while True:
+        username = input("Enter a username: ")
+        
+        if is_valid_username(username):
+            print("Username is valid, please now write the password")
+            break
+        else:
+            print(f"{msg} Invalid username! {T_again}.")
+
+    while True:
+        password = input("Enter a password : ")
+
+        if is_valid_password(password):
+            print("Signup successful!\n")
+            return username, password
+        else:
+            print(f'{msg}')
+            print(f"Invalid password! The password doesn't comply with the given conditions. Please read the instructions,{T_again}\n")
+
+def login(saved_username, saved_password):
+    print("PLEASE LOG IN =>")
+    while True:
+        username = input("Username: ")
+        password = input("Password: ")
+#si el usuario creado y el suminitrado nuevamente son iguales el usuario podra continuar == es para comparar valores iguales 
+        if username == saved_username and password == saved_password:
+            print(f"WELCOME TO THE WEBSITE, {username}!")
+            break
+        else:
+            print(f'{msg}')
+            print(f"Incorrect username or password. {T_again}")
+
+#INSTRUCTIONS
+def main():
+    print(f'{Welcome}')
+    print("Please read the follow instruccion for create an username and password and Sing up correctly")
+    print("Username: must be at least 6 characters long.")
+    print("Password: must be at least 8 characters long with at least one uppercase, one lowercase, one digit, one special characters and any spaces.")
+    print("LETS STAR THE SING-UP PROCESS => ")
+    username, password = signup()
+    login(username, password)
+
+if __name__ == "__main__":
+    main()
