@@ -1,5 +1,4 @@
-
-# TAX CALCUTE
+#TAX CALCULATOR
 
 def calculate_final_price(price, tax_rate):
     # Verificar que la tasa de impuesto esté entre 0 y 1
@@ -11,13 +10,13 @@ def calculate_final_price(price, tax_rate):
     return final_price
 
 try:
-    # Definición de variables
-    product_price = 500
-    myrate_taxe = 0.05  # Tasa de impuesto en formato decimal
+    # IMPUT OF THE USER FOR PRODUCT2 AND TAXES
+    product_price = float(input("Enter the product price: "))
+    myrate_taxe = float(input("Enter the sales tax rate: "))
     
-    # Cálculo del precio final FINAL PRICE 
-    
+    # CALLING THE FUNCTION
     final_price = calculate_final_price(product_price, myrate_taxe)
-    print(f"The price od the product plus taxes is: ${final_price:.2f}")
+    print(f"The final price of the product is: ${final_price:.2f}")
+
 except ValueError as e:
     print(f"Error: {e}")
