@@ -1,0 +1,49 @@
+#EMPLOYEE CLASS
+
+class Employee:
+    def __init__(self, name, job, department, salary, hire_year):
+        
+        #creatting attributes
+        self.name = name
+        self.job = job
+        self.department = department
+        self.salary = salary
+        self.hire_year = hire_year
+        
+    def __str__(self):
+        # retunr text of the employee / Este método devuelve una representación en texto del empleado
+        return f"{self.name}, {self.job} in {self.department}, Hired in: {self.hire_year}"
+
+    def year_worked(self, current_year):
+        # How many year of work / Este método calcula cuántos años ha trabajado el empleado
+        return current_year - self.hire_year
+
+    def total_expenses(self, current_year):
+        # salary depend of the years worked / Calcula el costo total en salarios del empleado según los años trabajados
+        years = self.year_worked(current_year)
+        return self.salary * years
+        
+    def info(self):
+        #method for show the information 
+        print(f"Employee Name: {self.name}")
+        print(f"Job Title: {self.job}")
+        print(f"Department: {self.department}")
+        print(f"Salary: ${self.salary}")
+        print(f"Hire Year: {self.hire_year}")
+     
+def main():  
+     
+    try: 
+        #creating the object of the class employee
+        employee1 = Employee("Laura S", "Industrial Engineer", "Sales", 50000, 2024)
+        
+        current_year = int(input("Enter the current year of the search: "))
+        print(f"Total Salary Expenses: ${employee1.total_expenses(current_year)}")
+        # FINAL PRINT OF THE EMPLOYEE INFORMATION
+        employee1.info()
+    except ValueError as e:
+        print(f"error:{e}")    
+    
+if __name__ == "__main__":
+    print("Welcome to our company tool for employee consultation")
+    main()
