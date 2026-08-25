@@ -4,7 +4,7 @@ Learning Python Fundamentals with Kingsborough Community College & CanCode Commu
 This repository contains the work I completed during my Python Programming Concepts course, offered through a collaboration between Kingsborough Community College (NY) and CanCode Communities.
 The program focused on building strong foundations in programming, computational thinking, and problem‑solving using Python.
 
-KEY SKILLS DEVELOPED
+# KEY SKILLS DEVELOPED
     Computational thinking
     Writing functions and modular code
     Control flow (loops, conditionals)
