@@ -1,5 +1,5 @@
 # Project 1 — Basic Python Mini‑Application
-# Sing-up and Login 
+Sing-up and Login 
 
 This mini‑project is a simple Python program designed to practice core programming concepts. This program creates a simple sign‑up and login system. It checks whether the username and password meet specific rules, asks the user to enter valid credentials, saves them, and then verifies them during login. If the username and password match the saved ones, the user is granted access; otherwise, the program asks them to try again.
 
@@ -19,6 +19,7 @@ This program performs a basic interactive task. It:
 
 
 # Project 2 — Basic Python Mini‑Application
+Employes Salary 
 This mini‑project is a simple Python program designed to practice core object‑oriented programming concepts.
 It uses a custom Employee class to store information about an employee and perform basic calculations based on user input.
 
@@ -32,7 +33,7 @@ The goal of this project is to apply Python fundamentals in a practical way, usi
 - clean and organized code structure
 
 ## 🛠️ What the Program Does
-- This program performs a basic interactive task. It:
+- This program performs a basic interactive task. 
 - creates an Employee object with predefined attributes
 - asks the user for the current year
 - calculates how many years the employee has worked
