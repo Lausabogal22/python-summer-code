@@ -11,11 +11,6 @@ KEY SKILLS DEVELOPED
     Problem‑solving with Python
     Basic debugging
 
-This course was part of the CanCode Communities workforce development initiative, designed to prepare students and professionals for careers in technology.The goal of the course was to develop practical Python skills through:
-    hands‑on exercises
-    small projects
-    logic and algorithm practice
-    functions and control flow
-    working with lists, loops, and basic data structures
-    writing clean, readable code
-    
+This course was part of the CanCode Communities workforce development initiative, designed to prepare students and professionals for careers in technology.The goal of the course was to develop practical Python skills through: hands‑on exercises, small projects, logic and algorithm practice, functions and control flow.
+
+Certificate of completion available.
