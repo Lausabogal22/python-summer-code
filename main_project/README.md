@@ -17,7 +17,7 @@ This program performs a basic interactive task. It:
 - produces a clear output based on the user's response
 
 
-# Project 2 — Basic Python Mini‑Application: Employees Salary
+# Project 2 — Python Mini‑Application: Employees Salary
   
 This mini‑project is a simple Python program designed to practice core object‑oriented programming concepts.
 It uses a custom Employee class to store information about an employee and perform basic calculations based on user input.
